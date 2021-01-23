@@ -3,24 +3,92 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-Hello World!
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <div class = "wrapper">
+      <div class="header">
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em>
+          </p>
+      </div>
+          <fieldset>
+            <form>
+  
+         <form id="survey-form">
+           <!-- <ledger>Your Personal Details</ledger> -->
+           <fieldset>
+           <label id="name-label" for="name">name
+             <input id="name" placeholder="Name"></input>
+           </label>
+           <label id="email-label" for="email">
+             email
+             <input id="email"placeholder="Email">
+           </label>
+          <label id="name-number"for="number">Age(optional)
+           <input id="number" placeholder="Age"min="10"max="99">
+           </label>
+          <label for="dropdown">Which option best describes your current role?
+           <select id="dropdown">
+             <option>Select an option
+           <option value="select" >Student
+               <option value="job" >
+               Full Time Job
+             <option value="leaner" >
+             Full Time Learner
+             </select> 
+           </label>
+           <label>
+         Would you recommend freeCodeCamp to a friend?
+          <label>
+             <input id="radio" type="radio" name="name">
+             Definitely
+             </label>
+             <label>
+               <input id="radio" type="radio" name="name">
+               Maybe</label>
+             <label>
+              <input id="radio" type="radio" name="name">            
+              Not Sure
+             </label>
+           </label>
+           <label>
+          What would you like to see improved? (Check all that apply)
+          <label>
+         <input type="checkbox">
+         Front-end Projects
+             </label>
+             <label>
+         <input type="checkbox">
+         Back-end Projects
+             </label>
+              <label>
+         <input type="checkbox">
+         Data Visualization
+             </label>
+            <label>
+         <input type="checkbox">Challenges
+             </label>
+              <label>
+         <input type="checkbox">
+         Open Source Community
+             </label>
+         <label>
+         Any comments or suggestions
+         <textarea type="text" >
+          </textarea>
+         </label>
+  
+         </fieldset>   
+           <div class="buttonplacement">              
+  <button id="submit" >submit</button>
+              </div>
+           </label>
+         </form>
+  
+         </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
